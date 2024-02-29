@@ -11,4 +11,4 @@
 Pomodoro 1:
 
 - ✅ DONE initial refactor
-- ⚠ TODO examples
+- ✅ DONE examples
