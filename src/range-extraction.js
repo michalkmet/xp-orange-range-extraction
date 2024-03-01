@@ -1,10 +1,10 @@
 function rangeExtraction(arrOfNumbers) {
-  if (arrOfNumbers[0] === 1) {
-    return '1';
-  } else if (arrOfNumbers[0] === 0 && arrOfNumbers[1] === 1) {
-    return '0, 1';
+  if (arrOfNumbers.length === 1) {
+    return arrOfNumbers[0].toString();
   }
-  return '0';
+  if (arrOfNumbers.length === 2) {
+    return arrOfNumbers[0].toString() + ',' + arrOfNumbers[1].toString();
+  }
 }
 
 module.exports = rangeExtraction;
