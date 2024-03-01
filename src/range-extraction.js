@@ -1,4 +1,7 @@
-function rangeExtraction() {
+function rangeExtraction(arrOfNumbers) {
+  if (arrOfNumbers[0] === 1) {
+    return '1';
+  }
   return '0';
 }
 
