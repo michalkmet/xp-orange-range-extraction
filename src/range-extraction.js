@@ -1,5 +1,5 @@
 function rangeExtraction() {
-  return 'hello';
+  return '0';
 }
 
 module.exports = rangeExtraction;
