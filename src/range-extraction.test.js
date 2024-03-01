@@ -19,4 +19,7 @@ describe('User Story 2: max 6 numbers', () => {
   it("UAT2.1 When I pass [-1, 0, 1] then I should see '-1-1'", () => {
     expect(rangeExtraction([-1, 0, 1])).toBe('-1-1');
   });
+  it("UAT2.2 When I pass [0, 1, 2] then I should see '0-2'", () => {
+    expect(rangeExtraction([0, 1, 2])).toBe('0-2');
+  });
 });
