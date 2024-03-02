@@ -25,4 +25,7 @@ describe('User Story 2: max 6 numbers', () => {
   it("UAT2.3 When I pass [0, 1, 2, 3, 5] then I should see '0-3,5'", () => {
     expect(rangeExtraction([0, 1, 2, 3, 5])).toBe('0-3,5');
   });
+  it("UAT2.4 When I pass [1, 2, 3, 5, 6] then I should see '1-3,5,6'", () => {
+    expect(rangeExtraction([1, 2, 3, 5, 6])).toBe('1-3,5,6');
+  });
 });

@@ -32,7 +32,7 @@ function createSequence(arrOfNumbers, i, resultStr) {
     if (resultStr[resultStr.length - 1] != '-') {
       resultStr += '-';
     }
-  } else if (arrOfNumbers[i] + 1 != arrOfNumbers[i + 1]) {
+  } else {
     resultStr += arrOfNumbers[i] + ',';
   }
   return resultStr;
