@@ -33,7 +33,8 @@ function createSequence(arrOfNumbers, i, resultStr) {
       resultStr += '-';
     }
   } else {
-    resultStr += arrOfNumbers[i] + ',';
+    // resultStr += arrOfNumbers[i] + ',';
+    resultStr += arrOfNumbers[i];
   }
   return resultStr;
 }
