@@ -23,6 +23,7 @@ function rangeExtraction(arrOfNumbers) {
 
 function createSequence(arrOfNumbers, i, resultStr) {
   console.log('i: ', i);
+  console.log('resultStr in the start: ', resultStr);
   console.log('arrOfNumbers[i]: ', arrOfNumbers[i]);
   console.log('arrOfNumbers[i] - 1: ', arrOfNumbers[i] - 1);
   console.log('arrOfNumbers[i - 1]: ', arrOfNumbers[i - 1]);
@@ -30,11 +31,17 @@ function createSequence(arrOfNumbers, i, resultStr) {
   console.log('arrOfNumbers[i + 1]: ', arrOfNumbers[i + 1]);
   if (arrOfNumbers[i] - 1 === arrOfNumbers[i - 1] && arrOfNumbers[i] + 1 === arrOfNumbers[i + 1]) {
     if (resultStr[resultStr.length - 1] != '-') {
+      console.log("resultStr[resultStr.length - 1] != '-'");
+      if (resultStr[resultStr.length - 1] === ',') {
+        console.log("resultStr[resultStr.length - 1] === ','");
+        resultStr = resultStr.slice(0, -1);
+        console.log('resultStr slice', resultStr);
+      }
       resultStr += '-';
     }
   } else {
-    // resultStr += arrOfNumbers[i] + ',';
-    resultStr += arrOfNumbers[i];
+    resultStr += arrOfNumbers[i] + ',';
+    // resultStr += arrOfNumbers[i];
   }
   return resultStr;
 }
