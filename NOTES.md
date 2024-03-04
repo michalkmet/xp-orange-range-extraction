@@ -35,6 +35,10 @@ Pomodoro 3:
 
 - ✅ DONE UAT2.3 When I pass [0, 1, 2, 3, 5] then I should see '0-3,5'
 - ✅ DONE UAT2.4 When I pass [1, 2, 3, 5, 6] then I should see '1-3,5,6'
+- 🚧 IN PROGRESS UAT2.5 When I pass [1, 2, 3, 5, 6, 7] then I should see '1-3,5-7'
+
+Pomodoro 4:
+
 - ✅ DONE UAT2.5 When I pass [1, 2, 3, 5, 6, 7] then I should see '1-3,5-7'
-- ⚠ TODO UAT2.6 When I pass [-3, -2, -1] then I should see '-3--1'
+- ✅ DONE UAT2.6 When I pass [-3, -2, -1] then I should see '-3--1'
 - ⚠ TODO UAT2.7 When I pass [-3, -1, 0] then I should see '-3,-1,0'
