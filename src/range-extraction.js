@@ -40,6 +40,11 @@ function createSequence(arrOfNumbers, i, resultStr) {
       resultStr += '-';
     }
   } else {
+    console.log('we are in the else + ,');
+    // todo add , if arrOfNumbers[i- 1] + 1 != arrOfNumbers[i]
+    // if (arrOfNumbers[i - 1] + 1 != arrOfNumbers[i]) {
+    //   resultStr += ',';
+    // }
     resultStr += arrOfNumbers[i] + ',';
     // resultStr += arrOfNumbers[i];
   }

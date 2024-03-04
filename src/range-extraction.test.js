@@ -34,4 +34,7 @@ describe('User Story 2: max 6 numbers', () => {
   it("UAT2.6 When I pass [-3, -2, -1] then I should see '-3--1'", () => {
     expect(rangeExtraction([-3, -2, -1])).toBe('-3--1');
   });
+  it("UAT2.7 When I pass [-3, -1, 0] then I should see '-3,-1,0'", () => {
+    expect(rangeExtraction([-3, -1, 0])).toBe('-3,-1,0');
+  });
 });
