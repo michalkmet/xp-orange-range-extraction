@@ -47,3 +47,4 @@ Pomodoro 5:
 
 - ✅ DONE UAT2.7 When I pass [-3, -1, 0] then I should see '-3,-1,0'
 - ✅ DONE Refactor
+- ✅ DONE code smells
