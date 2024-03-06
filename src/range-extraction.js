@@ -29,6 +29,7 @@ function createSequence(arrOfNumbers, i, resultStr) {
   console.log('arrOfNumbers[i - 1]: ', arrOfNumbers[i - 1]);
   console.log('arrOfNumbers[i] + 1: ', arrOfNumbers[i] + 1);
   console.log('arrOfNumbers[i + 1]: ', arrOfNumbers[i + 1]);
+  // add '-'
   if (arrOfNumbers[i] - 1 === arrOfNumbers[i - 1] && arrOfNumbers[i] + 1 === arrOfNumbers[i + 1]) {
     if (resultStr[resultStr.length - 1] != '-') {
       console.log("resultStr[resultStr.length - 1] != '-'");
@@ -41,12 +42,10 @@ function createSequence(arrOfNumbers, i, resultStr) {
     }
   } else {
     console.log('we are in the else + ,');
-    // todo add , if arrOfNumbers[i- 1] + 1 != arrOfNumbers[i]
-    // if (arrOfNumbers[i - 1] + 1 != arrOfNumbers[i]) {
-    //   resultStr += ',';
-    // }
+    if (i === 1 && resultStr[resultStr.length - 1] != '-') {
+      resultStr += ',';
+    }
     resultStr += arrOfNumbers[i] + ',';
-    // resultStr += arrOfNumbers[i];
   }
   return resultStr;
 }

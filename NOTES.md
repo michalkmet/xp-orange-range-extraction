@@ -42,3 +42,7 @@ Pomodoro 4:
 - ✅ DONE UAT2.5 When I pass [1, 2, 3, 5, 6, 7] then I should see '1-3,5-7'
 - ✅ DONE UAT2.6 When I pass [-3, -2, -1] then I should see '-3--1'
 - 🚧 IN PROGRESS UAT2.7 When I pass [-3, -1, 0] then I should see '-3,-1,0'
+
+Pomodoro 5:
+
+- ✅ DONE UAT2.7 When I pass [-3, -1, 0] then I should see '-3,-1,0'
